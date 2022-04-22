@@ -15,7 +15,9 @@ export const tabContainer = styled.main`
   padding: 1rem;
 `
 export const tabBody = styled.section`
-  height: 100%;
+    // height: 100%;
+    display: block;
+    overflow: auto; 
 `
 export const tab = styled("div")`
 * {

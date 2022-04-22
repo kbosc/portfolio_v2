@@ -2,9 +2,9 @@ import React from "react"
 import * as Style from "./tabs.style.jsx"
 import Link from "next/link"
 import { withRouter } from "next/router"
-import Home from "./Home"
-import Work from "./Work"
-import About from "./About"
+import Home from "./tabpanel/Home"
+import Work from "./tabpanel/Work"
+import About from "./tabpanel/About"
 
 export function Tabs({ router }) {
     const {query: { tab }} = router
