@@ -1,9 +1,22 @@
 import styled from 'styled-components'
 
-// export const centerCard = styled.main`
-// display: flex;
-// align-items: center;
-// justify-content: center;
-// width: 100vw;
-// height: 90vh;
-// `
+export const containerAbout = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 1rem;
+`
+export const containerDescription = styled.div`
+width: 50%;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: flex-start;
+gap: 1rem;
+`
+export const containerImage = styled.div`
+// background-color: black;
+overflow: hidden;
+border-radius: 30px;
+width: 50%;
+`

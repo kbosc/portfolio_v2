@@ -6,18 +6,22 @@ flex-direction: row;
 align-items: center;
 flex-wrap: nowrap;
 justify-content: flex-end;
+margin-bottom: 3rem;
 `
-export const tabContainer = styled.main`
-  width: 100%;
-  height: 100%;
-  background-color: ${props => props.theme.colors.vertCard};
-  border-radius: 20px;
-  padding: 1rem;
+export const tabContainer = styled.div`
+width: 100%;
+height: 100%;
+background-color: ${props => props.theme.colors.vertCard};
+border-radius: 20px;
+padding: 1rem;
+overflow-y: auto;
+overflow-x: hidden;
+flex: 1;
 `
 export const tabBody = styled.section`
-    // height: 100%;
-    display: block;
-    overflow: auto; 
+// height: 100%;
+display: block;
+overflow: auto; 
 `
 export const tab = styled("div")`
 * {

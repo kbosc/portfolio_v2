@@ -1,8 +1,13 @@
 import React from 'react'
+import Image from 'next/image'
+import * as Style from "./about.style"
+import kbosc from "../../../public/kbosc.jpg"
 
 export default function About() {
   return (
-    <div>
+    <>
+    <Style.containerAbout>
+      <Style.containerDescription>
         <h3>A propos de moi</h3>
         <p>Anciennement agent de sécurité dans le privé, frustré du manque d'évolution, 
             j'ai décidé de me reconvertir en tant que développeur web. Passionné depuis 
@@ -14,7 +19,23 @@ export default function About() {
             de nouveaux langages ou perfectionner mes acquis actuels. Vous pouvez apprécier 
             mes différents travaux réalisés lors de ce bootcamp.
         </p>
-        <p>Lien vers CV</p>
-    </div>
+        <a
+          href="/boscCV.pdf"
+          alt="Lien vers le CV"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Lien vers mon CV</a>
+      </Style.containerDescription>
+      <Style.containerImage>
+        <Image
+        alt="Profil picture"
+        src={kbosc}
+        layout="responsive"
+        objectFit="cover"
+        // className="imageCarousel"
+        />
+      </Style.containerImage>
+    </Style.containerAbout>
+    </>
   )
 }
