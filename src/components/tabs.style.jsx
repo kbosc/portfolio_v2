@@ -7,21 +7,24 @@ align-items: center;
 flex-wrap: nowrap;
 justify-content: flex-end;
 margin-bottom: 3rem;
+@media (min-width: 768px) {
+    margin-bottom: 1.5rem;
+}
 `
 export const tabContainer = styled.div`
-width: 100%;
 height: 100%;
-background-color: ${props => props.theme.colors.vertCard};
+// background-color: ${props => props.theme.colors.vertCard};
 border-radius: 20px;
 padding: 1rem;
-overflow-y: auto;
-overflow-x: hidden;
-flex: 1;
+// permet de contenir le carousel, couplé à cardItemm dans card.style
+// width: 100%;
+// overflow-y: auto;
+// overflow-x: hidden;
+// flex: 1;
 `
 export const tabBody = styled.section`
-// height: 100%;
 display: block;
-overflow: auto; 
+overflow: auto;
 `
 export const tab = styled("div")`
 * {

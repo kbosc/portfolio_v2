@@ -12,17 +12,17 @@ export default function Home() {
           Développeur front-end
         </Style.homeTitle>
         <Style.homeLink>
-          {' '}
+          {/* {' '} */}
           <Link href="https://github.com/kbosc">
-            <a>Github</a>
+            <a target="_blank">Github</a>
           </Link>
-          {' '}
+          {/* {' '} */}
           <Link href="https://www.linkedin.com/in/kevin-bosc-7b2395199/">
-            <a>Linkedin</a>
+            <a target="_blank">Linkedin</a>
           </Link>
-          {' '}
+          {/* {' '} */}
           <Link href="mailto:kevin_bosc@hotmail.com">
-            <a>Mail</a>
+            <a target="_blank">Mail</a>
           </Link>
         </Style.homeLink>
       </Style.homeContainer>

@@ -1,12 +1,17 @@
 html,
 body {
+  position: relative;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #FFEADF;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  /* background-color: #FFEADF; */
+  background-image: url('../public/assets/sand2.jpg');
+  /* background-image: url('../public/assets/paperCard.jpg'); */
+  background-size: cover;
   text-align: justify;
-  font-family: 'Cinzel', serif;
+  z-index: -2;
+  font-family: 'Special Elite', cursive;
 }
 
 a {

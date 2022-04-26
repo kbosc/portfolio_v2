@@ -17,11 +17,26 @@ export const ThemeDefault = {
         kakiCard: "#667761",
         vertCard: "#DEF2C8",
         backgroundColor: "rgba(246, 241, 209)",
-        colorShadeA: "rgb(106, 163, 137)",
-        colorShadeB: "rgb(121, 186, 156)",
-        colorShadeC: "rgb(150, 232, 195)",
-        colorShadeD: "rgb(187, 232, 211)",
-        colorShadeE: "rgb(205, 255, 232)",
+        // contour
+        colorShadeA: "#367471",
+        // fond bouton
+        colorShadeB: "#047b64",
+        // mileu bouton
+        colorShadeC: "#05bfc6",
+        // hoover haut du bouton
+        colorShadeD: "#76d9dd",
+        // colorShadeD: "white",
+        //haut du bouton
+        colorShadeE: "#aed6d5",
+        // colorShadeA: "rgb(106, 163, 137)",
+        // colorShadeB: "rgb(121, 186, 156)",
+        // colorShadeC: "rgb(150, 232, 195)",
+        // colorShadeD: "rgb(187, 232, 211)",
+        // colorShadeE: "rgb(205, 255, 232)",
+        sobreCardGrey: "#9C9C9C",
+        sobreCardMiddleGrey: "#7E8287",
+        sobreCardDarkGrey: "#696A6A",
+        sobreCardBlack: "#161616",
     },
     fontSize: {
         title: "18px",

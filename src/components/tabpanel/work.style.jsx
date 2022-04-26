@@ -38,14 +38,17 @@ position: relative;
     fill: rgba(255, 255, 255, 0.5);
 }
 `
-export const numberSlide1 = styled.div`
+export const numberSlide = styled.div`
 // background-color: red;
-`
-export const numberSlide2 = styled.div`
-background-color: green;
-`
-export const numberSlide3 = styled.div`
-background-color: black;
+@media (min-width: 768px) {
+    height: 230px;
+}
+@media (min-width: 1024px) {
+    height: 330px;
+}
+@media (min-width: 1440px) {
+    height: 380px;
+}
 `
 export const dots = styled.div`
 display: flex;

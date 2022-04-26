@@ -50,12 +50,12 @@ export default function Caroussel({ className }) {
     <>
       <Style.navigationWrapper className="navigation-wrapper">
         <div ref={sliderRef} className="keen-slider">
-          <Style.numberSlide1 className="keen-slider__slide number-slide1"><SlideOne/></Style.numberSlide1>
-          <Style.numberSlide2 className="keen-slider__slide number-slide2">2</Style.numberSlide2>
-          <Style.numberSlide3 className="keen-slider__slide number-slide3">3</Style.numberSlide3>
-          <div className="keen-slider__slide number-slide4">4</div>
-          <div className="keen-slider__slide number-slide5">5</div>
-          <div className="keen-slider__slide number-slide6">6</div>
+          <Style.numberSlide className="keen-slider__slide number-slide1"><SlideOne/></Style.numberSlide>
+          <Style.numberSlide className="keen-slider__slide number-slide2"><SlideOne/></Style.numberSlide>
+          <Style.numberSlide className="keen-slider__slide number-slide3"><SlideOne/></Style.numberSlide>
+          <Style.numberSlide className="keen-slider__slide number-slide3"><SlideOne/></Style.numberSlide>
+          <Style.numberSlide className="keen-slider__slide number-slide3"><SlideOne/></Style.numberSlide>
+          <Style.numberSlide className="keen-slider__slide number-slide3"><SlideOne/></Style.numberSlide>
         </div>
         {loaded && instanceRef.current && (
           <>

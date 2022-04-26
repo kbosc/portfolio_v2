@@ -1,14 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
 import * as Style from "./about.style"
-import kbosc from "../../../public/kbosc.jpg"
+import kbosc from "../../../public/assets/kbosc.jpg"
 
 export default function About() {
   return (
     <>
     <Style.containerAbout>
       <Style.containerDescription>
-        <h3>A propos de moi</h3>
+        <h3>A propos de moi :</h3>
         <p>Anciennement agent de sécurité dans le privé, frustré du manque d'évolution, 
             j'ai décidé de me reconvertir en tant que développeur web. Passionné depuis 
             toujours par mon ordinateur (essentiellement des jeux vidéos ) je me suis 
