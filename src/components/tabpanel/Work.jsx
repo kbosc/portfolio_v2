@@ -1,39 +1,12 @@
-// version simple carousel ci dessous
-// import React from 'react'
-// // import hrnet from "../../assets/hrnet.png";
-// // import bank from "../../assets/bank.png";
-// import { useKeenSlider } from "keen-slider/react";
-// import "keen-slider/keen-slider.min.css";
-// import * as Style from "./work.style"
-
-
-
-
-// export default function Caroussel() {
-//   const [sliderRef] = useKeenSlider();
-//   return (
-//     // <div>Caroussel
-//     //     <div>Description</div>
-//     //     <div>Image</div>
-//     // </div>
-//       <Style.containerSlide ref={sliderRef} className="keen-slider">
-//         <Style.numberSlide1 className="keen-slider__slide number-slide1">1</Style.numberSlide1>
-//         <Style.numberSlide2 className="keen-slider__slide number-slide2">2</Style.numberSlide2>
-//         <Style.numberSlide3 className="keen-slider__slide number-slide3">3</Style.numberSlide3>
-//         <div className="keen-slider__slide number-slide4">4</div>
-//         <div className="keen-slider__slide number-slide5">5</div>
-//         <div className="keen-slider__slide number-slide6">6</div>
-//       </Style.containerSlide>
-//   )
-// }
-
 import React, { useState } from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import * as Style from "./work.style"
 import SlideOne from "../slide/SlideOne.jsx"
 
-export default function Caroussel({ className }) {
+import { projectSlide } from '../slide/SlidePersonal';
+
+export default function Caroussel() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [loaded, setLoaded] = useState(false)
   const [sliderRef, instanceRef] = useKeenSlider({
@@ -50,12 +23,19 @@ export default function Caroussel({ className }) {
     <>
       <Style.navigationWrapper className="navigation-wrapper">
         <div ref={sliderRef} className="keen-slider">
-          <Style.numberSlide className="keen-slider__slide number-slide1"><SlideOne/></Style.numberSlide>
-          <Style.numberSlide className="keen-slider__slide number-slide2"><SlideOne/></Style.numberSlide>
-          <Style.numberSlide className="keen-slider__slide number-slide3"><SlideOne/></Style.numberSlide>
-          <Style.numberSlide className="keen-slider__slide number-slide3"><SlideOne/></Style.numberSlide>
-          <Style.numberSlide className="keen-slider__slide number-slide3"><SlideOne/></Style.numberSlide>
-          <Style.numberSlide className="keen-slider__slide number-slide3"><SlideOne/></Style.numberSlide>
+          {projectSlide.map (project => (
+            <>
+            <Style.numberSlide className="keen-slider__slide number-slide1">
+              <SlideOne 
+                sayHello={project.project.text} 
+                githubLink={project.project.githubLink}
+                projectImage={project.project.image}
+                projectAlt={project.project.imageAlt}
+              />
+            </Style.numberSlide>
+            </>
+            
+            ))}
         </div>
         {loaded && instanceRef.current && (
           <>
