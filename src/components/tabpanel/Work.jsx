@@ -4,7 +4,7 @@ import "keen-slider/keen-slider.min.css"
 import * as Style from "./work.style"
 import SlideOne from "../slide/SlideOne.jsx"
 
-import { projectSlide } from '../slide/SlidePersonal';
+import { projectSlide } from '../../../pages/api/hello';
 
 export default function Caroussel() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -23,16 +23,20 @@ export default function Caroussel() {
     <>
       <Style.navigationWrapper className="navigation-wrapper">
         <div ref={sliderRef} className="keen-slider">
-          {projectSlide.map (project => (
+          {projectSlide.map ((object, index) => (
             <>
-            <Style.numberSlide className="keen-slider__slide number-slide1">
-              <SlideOne 
-                sayHello={project.project.text} 
-                githubLink={project.project.githubLink}
-                projectImage={project.project.image}
-                projectAlt={project.project.imageAlt}
-              />
-            </Style.numberSlide>
+              <Style.numberSlide 
+                className="keen-slider__slide number-slide1"
+                key={index}
+              >
+                <SlideOne 
+                  key={object + index}
+                  sayHello={object.text} 
+                  githubLink={object.githubLink}
+                  projectImage={object.image}
+                  projectAlt={object.imageAlt}
+                />
+              </Style.numberSlide>
             </>
             
             ))}

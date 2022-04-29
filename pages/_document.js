@@ -4,8 +4,9 @@ import { ServerStyleSheet } from 'styled-components'
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang="fr">
         <Head>
+          
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Fredericka+the+Great&family=Special+Elite&display=swap" rel="stylesheet"/>
         </Head>
         <body>

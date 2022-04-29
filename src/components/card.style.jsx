@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-export const centerCard = styled.main`
-display: flex;
-align-items: center;
-justify-content: center;
-width: 100vw;
-height: 100vh;
-position: relative;
-`
+// export const centerCard = styled.main`
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// width: 100vw;
+// height: 100vh;
+// position: relative;
+// `
 export const bgWrap = styled.div`
 position: absolute;
 height: 100%;
@@ -16,9 +16,9 @@ overflow: hidden;
 border-radius: 20px;
 z-index: -1;
 `
-export const smartphoneCard = styled.div`
-margin: 2rem;
-`
+// export const smartphoneCard = styled.div`
+// margin: 2rem;
+// `
 export const cardItem = styled.div`
 position: relative;
 // border: 10px solid ${props => props.theme.colors.sobreCardBlack};

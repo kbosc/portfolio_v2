@@ -44,7 +44,6 @@ export default function SlideOne({sayHello, githubLink, projectImage, projectAlt
                 width={200}
                 height={200}
                 objectFit="cover"
-                className="imageCarousel"
             />
         </Style.containerImage>  
       </Style.containerSlide>
