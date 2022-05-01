@@ -1,12 +1,15 @@
-import React from "react"
-import * as Style from "./tabs.style.jsx"
-import Link from "next/link"
+import { useDispatch } from "react-redux"
 import { withRouter } from "next/router"
+import Link from "next/link"
+import React from "react"
+
+import * as Style from "./tabs.style.jsx"
+import About from "./tabpanel/About"
 import Home from "./tabpanel/Home"
 import Work from "./tabpanel/Work"
-import About from "./tabpanel/About"
 
 export function Tabs({ router }) {
+    // const dispatch = useDispatch()
     const {query: { tab }} = router
     const isTabOne = tab === "1" || tab == null
     const isTabTwo = tab === "2"

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { FadeIn } from "../../../styles/theme"
 
 export const containerAbout = styled.div`
 display: flex;
@@ -8,6 +9,7 @@ gap: 1rem;
 @media (min-width: 1440px) {
     margin-top: 3rem;
 }
+animation: ${FadeIn} 1.5s;
 `
 export const containerDescription = styled.section`
 @media (min-width: 768px) {

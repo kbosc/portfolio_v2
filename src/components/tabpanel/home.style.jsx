@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { FadeIn } from "../../../styles/theme"
 
 export const homeContainer = styled.section`
 display:flex;
@@ -6,6 +7,7 @@ flex-direction: column;
 flex-wrap: nowrap;
 align-items: flex-start;
 padding-left: 5rem;
+animation: ${FadeIn} 1.5s;
 `
 export const homeTitle = styled.h1`
 font-weight: 400;

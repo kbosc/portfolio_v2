@@ -1,22 +1,34 @@
+import styled, { keyframes } from 'styled-components'
+
+export const FadeIn = keyframes`
+from {
+    opacity: 0;
+    // transform: translateY(100px);
+}
+to {
+    opacity: 1;
+    // transform: translateY(0px)
+}
+`
 
 export const ThemeDefault = {
     colors: {
-        text: "#2c3e50",
-        un: '#FCD1BA',
-        deux: '#D5A19D',
-        trois: "#9F8AA7",
-        quatre: "#34262E",
-        cinq: "#A05063",
-        six: "#A07692",
-        sept: "#F4EBF0",
-        huit: "#9A828B",
-        unCheat: "#FFEADF",
-        troisCheat: "#D3C4D7",
-        roseCheat: "#FBCEF2",
-        greyCard: "#9C9C9C",
-        kakiCard: "#667761",
-        vertCard: "#DEF2C8",
-        backgroundColor: "rgba(246, 241, 209)",
+        // text: "#2c3e50",
+        // un: '#FCD1BA',
+        // deux: '#D5A19D',
+        // trois: "#9F8AA7",
+        // quatre: "#34262E",
+        // cinq: "#A05063",
+        // six: "#A07692",
+        // sept: "#F4EBF0",
+        // huit: "#9A828B",
+        // unCheat: "#FFEADF",
+        // troisCheat: "#D3C4D7",
+        // roseCheat: "#FBCEF2",
+        // greyCard: "#9C9C9C",
+        // kakiCard: "#667761",
+        // vertCard: "#DEF2C8",
+        // backgroundColor: "rgba(246, 241, 209)",
         // contour
         colorShadeA: "#367471",
         // fond bouton
@@ -28,21 +40,13 @@ export const ThemeDefault = {
         // colorShadeD: "white",
         //haut du bouton
         colorShadeE: "#aed6d5",
-        // colorShadeA: "rgb(106, 163, 137)",
-        // colorShadeB: "rgb(121, 186, 156)",
-        // colorShadeC: "rgb(150, 232, 195)",
-        // colorShadeD: "rgb(187, 232, 211)",
-        // colorShadeE: "rgb(205, 255, 232)",
-        sobreCardGrey: "#9C9C9C",
-        sobreCardMiddleGrey: "#7E8287",
-        sobreCardDarkGrey: "#696A6A",
-        sobreCardBlack: "#161616",
     },
     fontSize: {
         title: "18px",
         paragraph: "12px",
     },
 }
+
 
 // import styled from 'styled-components'
 // export const Button = styled.button`

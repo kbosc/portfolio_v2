@@ -1,15 +1,18 @@
-import React from 'react'
-import Head from 'next/head'
-// import Link from 'next/link'
-import Card from '../src/components/Card'
 import styled from 'styled-components'
 import Image from 'next/image'
+import Head from 'next/head'
+import React from 'react'
+
 import img from '../public/assets/sand2.jpg'
+import Card from '../src/components/Card'
 
 export const ContainerHome = styled.main`
 display: flex;
 justify-content: center;
 padding-top: 25vh;
+.clickTrigger {
+  // transform: rotateY(360deg);
+}
 `
 export const BgWrap = styled.main`
 position: fixed;

@@ -1,8 +1,6 @@
 import React from 'react'
 import * as Style from "./slideOne.style"
-// import hrnet from "../../../public/assets/hrnetUndraw.svg";
-import github from "../../../public/assets/iconeGithub.svg";
-// import hrnet from "../../assets/hrnet.png";
+import github from "../../public/assets/iconeGithub.svg";
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -43,7 +41,7 @@ export default function SlideOne({sayHello, githubLink, projectImage, projectAlt
                 // layout="fill"
                 width={200}
                 height={200}
-                objectFit="cover"
+                objectFit="contain"
             />
         </Style.containerImage>  
       </Style.containerSlide>

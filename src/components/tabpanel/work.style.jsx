@@ -1,21 +1,8 @@
 import styled from 'styled-components'
-// version simple carousel ci dessous
-// export const containerSlide = styled.div`
-// margin: 1rem 0;
-// width: 100%;
-// height: 90%;
-// border-radius: 30px;
-// `
-// export const numberSlide1 = styled.div`
-// background-color: red;
-// `
-// export const numberSlide2 = styled.div`
-// background-color: green;
-// `
-// export const numberSlide3 = styled.div`
-// background-color: black;
-// `
+import { FadeIn } from "../../../styles/theme"
+
 export const navigationWrapper = styled.div`
+animation: ${FadeIn} 1.5s;
 position: relative;
 .arrow {
     width: 30px;

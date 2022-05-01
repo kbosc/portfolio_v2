@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import * as Style from "./work.style"
-import SlideOne from "../slide/SlideOne.jsx"
+import SlideOne from "../SlideOne.jsx"
 
 import { projectSlide } from '../../../pages/api/hello';
 
