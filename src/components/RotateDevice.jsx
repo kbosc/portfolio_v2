@@ -7,7 +7,7 @@ export default function rotateDevice() {
         <Style.smartphoneCard>
             <Style.phone/>
             <Style.messageRotate>
-                S'il vous plait,
+                S&apos;il vous plait,
                 <br />
                 tourner votre smarphone !
             </Style.messageRotate>

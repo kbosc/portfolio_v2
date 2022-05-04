@@ -5,6 +5,7 @@ const nextConfig = {
 
 module.exports = {
   experimental: {
+    // externalDir: true,
     images: {
       layoutRaw: true,
     },
