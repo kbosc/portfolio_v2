@@ -10,26 +10,36 @@ to {
     // transform: translateY(0px)
 }
 `
+export const StyledLink = styled.a`
+font-weight: 900;
+@media (min-width: 768px) {
+    font-size: 0.8rem;   
+}
+@media (min-width: 1024px) {
+    font-size: 0.8rem;   
+}
+@media (min-width: 1440px) {
+    font-size: 1rem;
+}
+color: black;
+display:inline-block; 
+margin: 0rem 0.5rem;
+text-transform:uppercase;
+&:after {
+    display:block;
+    content: '';  
+    // border-bottom: solid 3px ${props => props.theme.colors.sobreCardBlack};  
+    border-bottom: solid 3px black;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+&:hover {
+    &:after { transform: scaleX(1) }
+}
+`
 
 export const ThemeDefault = {
     colors: {
-        // text: "#2c3e50",
-        // un: '#FCD1BA',
-        // deux: '#D5A19D',
-        // trois: "#9F8AA7",
-        // quatre: "#34262E",
-        // cinq: "#A05063",
-        // six: "#A07692",
-        // sept: "#F4EBF0",
-        // huit: "#9A828B",
-        // unCheat: "#FFEADF",
-        // troisCheat: "#D3C4D7",
-        // roseCheat: "#FBCEF2",
-        // greyCard: "#9C9C9C",
-        // kakiCard: "#667761",
-        // vertCard: "#DEF2C8",
-        // backgroundColor: "rgba(246, 241, 209)",
-        // contour
         colorShadeA: "#367471",
         // fond bouton
         colorShadeB: "#047b64",

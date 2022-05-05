@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import * as Style from "./about.style"
 import kbosc from "../../../public/assets/kbosc.jpg"
+import { StyledLink } from "../../../styles/theme"
 
 export default function About() {
   return (
@@ -19,12 +20,14 @@ export default function About() {
             de nouveaux langages ou perfectionner mes acquis actuels. Vous pouvez apprécier 
             mes différents travaux réalisés lors de ce bootcamp.
         </p>
-        <a
+        <StyledLink
           href="/boscCV.pdf"
           alt="Lien vers le CV"
           target="_blank"
           rel="noopener noreferrer"
-        >Lien vers mon CV</a>
+        >
+          Lien vers mon CV
+        </StyledLink>
       </Style.containerDescription>
       <Style.containerImage>
         <Image

@@ -30,31 +30,14 @@ font-family: 'Fredericka the Great', cursive;
 }
 `
 export const homeLink = styled.p`
-font-weight: 900;
-@media (min-width: 768px) {
-    font-size: 0.8rem;   
-}
-@media (min-width: 1024px) {
-    font-size: 0.8rem;   
-}
-@media (min-width: 1440px) {
-    font-size: 1rem;
-}
-a {
-    color: black;
-    display:inline-block; 
-    margin: 0rem 0.5rem;
-    text-transform:uppercase;
-    &:after {
-        display:block;
-        content: '';
-        // border-bottom: solid 3px ${props => props.theme.colors.colorShadeA};  
-        border-bottom: solid 3px ${props => props.theme.colors.sobreCardBlack};  
-        transform: scaleX(0);  
-        transition: transform 250ms ease-in-out;
-    }
-    &:hover {
-        &:after { transform: scaleX(1) }
-    }
-}
+// font-weight: 900;
+// @media (min-width: 768px) {
+//     font-size: 0.8rem;   
+// }
+// @media (min-width: 1024px) {
+//     font-size: 0.8rem;   
+// }
+// @media (min-width: 1440px) {
+//     font-size: 1rem;
+// }
 `

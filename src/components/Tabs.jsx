@@ -1,4 +1,3 @@
-import { useDispatch } from "react-redux"
 import { withRouter } from "next/router"
 import Link from "next/link"
 import React from "react"
@@ -9,7 +8,6 @@ import Home from "./tabpanel/Home"
 import Work from "./tabpanel/Work"
 
 export function Tabs({ router }) {
-    // const dispatch = useDispatch()
     const {query: { tab }} = router
     const isTabOne = tab === "1" || tab == null
     const isTabTwo = tab === "2"
@@ -20,17 +18,17 @@ export function Tabs({ router }) {
         <Style.tabHead>
             <Link href={{ pathname: "/", query: { tab: "1" } }} passHref>
                 <Style.tab className="big-button">
-                    <a>Home</a>
+                    <a>Accueil</a>
                 </Style.tab>
             </Link>
             <Link href={{ pathname: "/", query: { tab: "2" } }} passHref>
                 <Style.tab className="big-button">
-                    <a>Work</a>
+                    <a>Projets</a>
                 </Style.tab>
             </Link>
             <Link href={{ pathname: "/", query: { tab: "3" } }} passHref>
                 <Style.tab className="big-button">
-                    <a>About</a>
+                    <a>A propos</a>
                 </Style.tab>
             </Link>
             <Link href={`/sandBox`} passHref>

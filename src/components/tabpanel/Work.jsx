@@ -35,6 +35,8 @@ export default function Caroussel() {
                   githubLink={object.githubLink}
                   projectImage={object.image}
                   projectAlt={object.imageAlt}
+                  projectUrl={object.url}
+                  projectTechno={object.techno}
                 />
               </Style.numberSlide>
             </>
