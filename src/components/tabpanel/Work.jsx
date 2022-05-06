@@ -23,25 +23,24 @@ export default function Caroussel() {
     <>
       <Style.navigationWrapper className="navigation-wrapper">
         <div ref={sliderRef} className="keen-slider">
-          {projectSlide.map ((object, index) => (
-            <>
-              <Style.numberSlide 
-                className="keen-slider__slide number-slide1"
-                key={index}
-              >
-                <SlideOne 
-                  key={object + index}
-                  sayHello={object.text} 
-                  githubLink={object.githubLink}
-                  projectImage={object.image}
-                  projectAlt={object.imageAlt}
-                  projectUrl={object.url}
-                  projectTechno={object.techno}
-                />
-              </Style.numberSlide>
-            </>
-            
-            ))}
+          {projectSlide.map ((object, index) => {
+             return (
+              <div key={index}>
+                <Style.numberSlide 
+                  className="keen-slider__slide number-slide1"
+                >
+                  <SlideOne 
+                    sayHello={object.text} 
+                    githubLink={object.githubLink}
+                    projectImage={object.image}
+                    projectAlt={object.imageAlt}
+                    projectUrl={object.url}
+                    projectTechno={object.techno}
+                  />
+                </Style.numberSlide>
+              </div>            
+             )
+          })}
         </div>
         {loaded && instanceRef.current && (
           <>

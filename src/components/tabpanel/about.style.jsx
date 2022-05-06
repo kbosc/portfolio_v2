@@ -12,18 +12,23 @@ gap: 1rem;
 animation: ${FadeIn} 1.5s;
 `
 export const containerDescription = styled.section`
+a {
+    margin-top: 1rem;
+}
 @media (min-width: 768px) {
-    h3 {
+    h2 {
         font-size: 1.5rem;
     }
     p {
         font-weight: 900;
-        font-size: 0.7rem;   
+        font-size: 0.7rem;
+        margin-bottom: 0.2rem;
     }
 }
 @media (min-width: 1024px) {
-    h3 {
+    h2 {
         font-size: 2rem;
+        margin-bottom: 0.4rem;
     }
     p {
         font-weight: 900;
@@ -31,17 +36,12 @@ export const containerDescription = styled.section`
     }
 }
 @media (min-width: 1440px) {
-    h3 {
+    h2 {
         font-size: 2rem;
     }
     p {
         font-weight: 900;
-        // font-size: 2rem;   
     }
-}
-h3 {
-    font-family: 'Fredericka the Great', cursive;
-    font-weight: 400;
 }
 width: 50%;
 display: flex;
@@ -50,7 +50,6 @@ flex-wrap: nowrap;
 align-items: flex-start;
 gap: 1rem;
 a {
-    // font-weight: 900;
     font-style: italic;
 }
 `

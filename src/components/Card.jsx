@@ -8,7 +8,8 @@ import * as Style from "./card.style"
 import Tabs from "./Tabs"
 
 export default function Card() {
-  const isDesktopResolution = useMatchMedia('(min-width:768px)', true)
+  const isDesktopResolution = useMatchMedia('(min-width:700px)', true)
+  // const isDesktopResolution = useMatchMedia('(min-width:768px)', true)
   
   return (
       <>

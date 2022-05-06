@@ -8,9 +8,9 @@ const clickSlice = createSlice({
     },
     reducers: {
         clickStateChange: (state, action) => {
-            console.log(state);
+            // console.log(state);
             state = action
-            console.log(state);
+            // console.log(state);
         }
     }
 })

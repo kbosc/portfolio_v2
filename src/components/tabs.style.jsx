@@ -13,14 +13,8 @@ margin-bottom: 3rem;
 `
 export const tabContainer = styled.div`
 height: 100%;
-// background-color: ${props => props.theme.colors.vertCard};
 border-radius: 20px;
 padding: 1rem;
-// permet de contenir le carousel, couplé à cardItemm dans card.style
-// width: 100%;
-// overflow-y: auto;
-// overflow-x: hidden;
-// flex: 1;
 `
 export const tabBody = styled.section`
 display: block;
@@ -74,7 +68,6 @@ cursor: pointer;
 }
 &.big-button:active::before {
     transform: translate3d(0, 0, -1em);
-
     box-shadow: 0 0 0 2px ${props => props.theme.colors.colorShadeB}, 0 0.25em 0 0 ${props => props.theme.colors.colorShadeB};
 }
 `
