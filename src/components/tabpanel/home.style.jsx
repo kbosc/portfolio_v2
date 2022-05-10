@@ -29,15 +29,3 @@ font-family: 'Fredericka the Great', cursive;
 }
 }
 `
-export const homeLink = styled.p`
-// font-weight: 900;
-// @media (min-width: 768px) {
-//     font-size: 0.8rem;   
-// }
-// @media (min-width: 1024px) {
-//     font-size: 0.8rem;   
-// }
-// @media (min-width: 1440px) {
-//     font-size: 1rem;
-// }
-`

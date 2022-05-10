@@ -1,6 +1,6 @@
 import React from 'react'
-import Loader from './Loader'
 import Link from 'next/link'
+import Loader from './Loader'
 import * as Style from "./containerSandBox.style"
 
 export default function ContainerSandBox () {
@@ -9,6 +9,8 @@ export default function ContainerSandBox () {
         <Style.containerSandBox>
           <Link href={`/`} passHref>
             <Style.linkReturnNeutral>
+              La page est en construction
+              <br />
               Retour en zone neutre !
               <Loader/>
             </Style.linkReturnNeutral>     

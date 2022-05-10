@@ -3,7 +3,7 @@ import Head from 'next/head'
 import styled from 'styled-components'
 import ContainerSandBox from '../src/components/ContainerSandBox'
 
-export const BgWrap = styled.main`
+export const BgWrap = styled.div`
 position: fixed;
 height: 100vh;
 width: 100vw;

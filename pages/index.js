@@ -14,7 +14,7 @@ padding-top: 25vh;
   // transform: rotateY(360deg);
 }
 `
-export const BgWrap = styled.main`
+export const BgWrap = styled.div`
 position: fixed;
 height: 100vh;
 width: 100vw;
@@ -43,7 +43,6 @@ export default function Home() {
         <ContainerHome>
           <Card/>
         </ContainerHome>
-
       </>
     </>
   )
