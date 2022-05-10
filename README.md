@@ -2,7 +2,7 @@
 
     Projet perso | Portfolio qui représente mon parcours de developpeur
 
-![alt text](https://github.com/kbosc/portfolio_v2/blob/public/assets/portfoliov2.png?raw=true)
+![alt text](https://github.com/kbosc/portfolio_v2/blob/main/public/assets/portfoliov2.png?raw=true)
 
 > PROBLEMATIQUE
 
